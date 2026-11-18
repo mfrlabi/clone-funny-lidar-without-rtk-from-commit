@@ -1,6 +1,35 @@
 # clone-funny-lidar-without-rtk-from-commit
 
 
+# Livox Ros2 driver2 install on ros2 humble
+
+    mkdir livox_ws
+    cd livox_ws
+    mdkir src
+    cd src
+    
+## clone Livox SDK2
+
+    git clone https://github.com/Livox-SDK/Livox-SDK2.git
+    cd ./Livox-SDK2/
+     mkdir build
+     cd build
+     cmake .. && make -j
+     sudo make install
+
+## clone Livox ros deiver2
+
+    cd ~/livox_ws/src
+    git clone https://github.com/Livox-SDK/livox_ros_driver2.git
+
+## after cloning 
+
+    cd ~/livox_ws/src/livox_ros_driver2
+    source /opt/ros/humble/setup.bash
+    ./build.sh humble
+
+
+
 Clone and checkout a specific commit
 ====================================
 
