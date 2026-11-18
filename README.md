@@ -21,9 +21,6 @@
 
     cd ~/livox_ws/src
     git clone https://github.com/Livox-SDK/livox_ros_driver2.git
-
-## after cloning 
-
     cd ~/livox_ws/src/livox_ros_driver2
     source /opt/ros/humble/setup.bash
     ./build.sh humble
