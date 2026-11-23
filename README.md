@@ -17,8 +17,8 @@
     cmake .. && make -j
     sudo make install
 
-## Your config file is correct, IP and ports match. The only missing action is the **start scan command**.
-If the SDK examples still fail to compile, we can try pulling a clean Livox-SDK2 repo:
+## if config file is correct, IP and ports match. The only missing action is the **start scan command**.
+and If the SDK examples still fail to compile, we can try pulling a clean Livox-SDK2 repo:
 
     cd ~/livox_ws/src
     rm -rf Livox-SDK2
