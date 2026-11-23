@@ -83,6 +83,9 @@ Commands
 
     git clone https://gitee.com/qingdao-qingcheng-digital/qc_lidar_slam.git
 
+    cd funny_lidar_slam_ws/src
+    
+
 # 2. Enter the repository
 
     cd qc_lidar_slam
