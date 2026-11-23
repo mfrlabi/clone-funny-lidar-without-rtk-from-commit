@@ -26,6 +26,25 @@
     ./build.sh humble
 
 
+#------ wifi modify--------
+
+## Assign static IP
+
+    sudo nmcli connection modify "Wired connection 1" ipv4.addresses 192.168.168.135/24
+
+## Switch from DHCP(auto) to static(manual)
+
+    sudo nmcli connection modify "Wired connection 1" ipv4.method manual
+
+## Apply changes
+
+    sudo nmcli connection up "Wired connection 1"
+
+## Check
+
+    nmcli connection show "Wired connection 1" | grep ipv4.method
+
+  
 
 Clone and checkout a specific commit
 ====================================
