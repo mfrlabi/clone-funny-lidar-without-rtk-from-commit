@@ -17,6 +17,20 @@
     cmake .. && make -j
     sudo make install
 
+## Your config file is correct, IP and ports match. The only missing action is the **start scan command**.
+If the SDK examples still fail to compile, we can try pulling a clean Livox-SDK2 repo:
+
+    cd ~/livox_ws/src
+    rm -rf Livox-SDK2
+    git clone https://github.com/Livox-SDK/Livox-SDK2.git
+    cd Livox-SDK2
+    mkdir build && cd build
+    cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_EXAMPLES=ON ..
+    make -j$(nproc)
+    sudo make install
+    sudo ldconfig
+
+
 ## clone Livox ros deiver2
 
     cd ~/livox_ws/src
